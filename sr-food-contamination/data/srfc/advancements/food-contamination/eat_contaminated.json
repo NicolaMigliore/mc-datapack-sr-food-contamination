@@ -1,0 +1,47 @@
+{
+  "parent": "sr:solar_radiation/root",
+  "criteria": {
+    "carrot": {
+      "conditions": {
+        "item": {
+          "items": ["minecraft:carrot"],
+          "nbt": "{CustomModelData:1918002}"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "potato": {
+      "conditions": {
+        "item": {
+          "items": ["minecraft:potato"],
+          "nbt": "{CustomModelData:1918004}"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "beetroot": {
+      "conditions": {
+        "item": {
+          "items": ["minecraft:beetroot"],
+          "nbt": "{CustomModelData:1918005}"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "sweet_berries": {
+      "conditions": {
+        "item": {
+          "items": ["minecraft:sweet_berries"],
+          "nbt": "{CustomModelData:1918006}"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "requirements": [
+    ["carrot","potato","beetroot","sweet_berries"]
+  ],
+  "rewards": {
+    "function": "srfc:decontamination/eat_contaminated"
+  }
+}
